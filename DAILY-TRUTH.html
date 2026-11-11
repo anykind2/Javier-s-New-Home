@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Truth — Javier’s New Home</title>
+  <meta name="description" content="Nineteen working rules, six borrowed ideas, and the quotes Javier keeps writing down. A notebook, not a productivity system.">
+  <meta name="theme-color" content="#f2ecdf">
+  <meta property="og:title" content="Daily Truth — Javier’s New Home">
+  <meta property="og:description" content="Nineteen rules that keep me honest, six ideas I keep in my pocket, and a page a day.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var theme = localStorage.getItem('javier.theme');
+        if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+      } catch (err) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the good stuff</a>
+
+  <header class="site-nav" data-nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">J</span>
+        <span class="brand__text">
+          <b>Javier’s New Home</b>
+          <span>Est. 2022 · kept by hand</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="MUSICS.html">Music</a>
+        <a class="nav-link is-active" href="DAILY-TRUTH.html" aria-current="page">Daily truth</a>
+        <a class="nav-link" href="GALLERY.html">Sketchbook</a>
+      </nav>
+
+      <div class="nav-tools">
+        <button class="nav-now" type="button" data-open-player aria-label="Open the now playing panel">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span data-nav-track>Past Lives</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Lights off">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.1"/><path d="M12 2v2.3M12 19.7V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.3M19.7 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/>
+          </svg>
+        </button>
+        <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <div class="mobile-menu__inner">
+      <span class="kicker">The whole house</span>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="index.html">Home <span>01</span></a>
+        <a href="MUSICS.html">Music <span>02</span></a>
+        <a href="DAILY-TRUTH.html" aria-current="page">Daily truth <span>03</span></a>
+        <a href="GALLERY.html">Sketchbook <span>04</span></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <span>64 songs · 19 rules · one sketchbook</span>
+        <a href="MUSICS.html">start listening →</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================ page hero =========================== -->
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="page-hero__grid-bg" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <div class="page-hero__grid">
+          <div>
+            <span class="kicker" data-reveal>The notebook · open at today</span>
+            <h1 data-reveal>A page a day.<br><em>No streak to protect.</em></h1>
+            <p class="page-hero__lede" data-reveal>
+              Nineteen rules I keep failing and returning to, six borrowed ideas that
+              changed how I work, and the quotes I write on the back of receipts.
+              Take what helps. Leave the rest.
+            </p>
+
+            <div class="page-hero__actions" data-reveal>
+              <a class="btn btn--primary" href="#rules">
+                Start with one rule
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v11M4 9.5l4 4 4-4"/></svg>
+              </a>
+              <button class="btn" type="button" data-play="Past Lives.mp3">
+                <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+                Play something quiet
+              </button>
+            </div>
+
+            <div class="page-hero__stats page-hero__stats--pair" data-reveal>
+              <span class="stat"><b>19</b><span>working rules</span></span>
+              <span class="stat"><b>06</b><span>borrowed ideas</span></span>
+              <span class="stat"><b>365</b><span>fresh starts</span></span>
+              <span class="stat"><b>0</b><span>streaks to protect</span></span>
+            </div>
+          </div>
+
+          <aside class="today-card" data-reveal="scale">
+            <span class="tape" aria-hidden="true"></span>
+            <span class="today-card__eyebrow">Today, in the notebook</span>
+            <span class="today-card__day" data-today-day>10</span>
+            <span class="today-card__month" data-today-month>November</span>
+            <div class="today-card__foot">
+              <span data-today-weekday>Tuesday</span>
+              <span>Day <span data-day-of-year>314</span> / 365</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ today's truth ======================= -->
+    <section class="section section--tight" id="today">
+      <div class="wrap">
+        <div class="film">
+          <div class="quote-spotlight" data-reveal="left">
+            <span class="tape" aria-hidden="true"></span>
+            <div class="quote-spotlight__top">
+              <span class="kicker">Today’s truth</span>
+              <button class="quote-spotlight__next" type="button" data-next-truth>
+                Another one
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></svg>
+              </button>
+            </div>
+            <blockquote class="quote-spotlight__text" data-daily-quote>Whatever can be done in under five minutes should be done now.</blockquote>
+            <div class="quote-spotlight__foot">
+              <span data-daily-key>THE FIVE-MINUTE RULE</span>
+              <span data-truth-index>01 / 08</span>
+            </div>
+          </div>
+
+          <div class="film__meta" data-reveal="right">
+            <span class="kicker">A note in the margin</span>
+            <h2>Advice is just a story someone survived.</h2>
+            <p>
+              None of this came from a course. It came from bad weeks, borrowed books,
+              and the slow realisation that the obvious thing is usually the hard thing.
+            </p>
+            <div class="film__facts">
+              <div><span>Written</span><span>On paper first</span></div>
+              <div><span>Revised</span><span>Constantly</span></div>
+              <div><span>Followed</span><span>Most days</span></div>
+              <div><span>Regretted</span><span>Item 18, sometimes</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== rules ============================= -->
+    <section class="section" id="rules">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">01 — The working list</span>
+            <h2>Nineteen rules that keep me <em class="serif">honest.</em></h2>
+            <p>
+              Tick them off as you go. The list resets every morning, because the point
+              was never a perfect record — it was a better Tuesday.
+            </p>
+          </div>
+          <div class="section-head__aside">
+            <span class="stamp"><i></i>One day at a time</span>
+          </div>
+        </div>
+
+        <div class="notebook" data-reveal>
+          <div class="notebook__head">
+            <div>
+              <span class="kicker">Today’s page</span>
+              <h3>The list, in pencil</h3>
+            </div>
+            <div class="focus-progress">
+              <div class="focus-progress__bar" data-progress role="progressbar" aria-label="Rules completed today" aria-valuemin="0" aria-valuemax="19" aria-valuenow="0">
+                <i data-progress-bar></i>
+              </div>
+              <div class="focus-progress__meta">
+                <span data-progress-text>0 / 19 done today</span>
+                <button class="focus-progress__reset" type="button" data-reset-rules>Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rules-list" role="group" aria-label="Daily rules checklist">
+            <button class="rule-row" type="button" data-rule="1" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">01</span>
+              <span class="rule-row__text">Plan your day. Write everything you want to achieve in it.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="2" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">02</span>
+              <span class="rule-row__text">Write your goals on physical paper.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="3" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">03</span>
+              <span class="rule-row__text">Follow the 80/20 rule. 20% of your work brings 80% of your results.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="4" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">04</span>
+              <span class="rule-row__text">Stop multitasking. Switching tasks reduces your productivity a lot.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="5" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">05</span>
+              <span class="rule-row__text">Focus on one task at a time.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="6" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">06</span>
+              <span class="rule-row__text">Remove all the distractions from your environment.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="7" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">07</span>
+              <span class="rule-row__text">When tired, take a nap.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="8" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">08</span>
+              <span class="rule-row__text">Learn to say no. You will never have enough time if you say yes to everything.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="9" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">09</span>
+              <span class="rule-row__text">Delegate all the non-important tasks.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="10" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">10</span>
+              <span class="rule-row__text">Don’t wait for the perfect time. Do it now.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="11" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">11</span>
+              <span class="rule-row__text">Anything that can be done in under five minutes should be done now.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="12" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">12</span>
+              <span class="rule-row__text">Do the task you hate first.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="13" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">13</span>
+              <span class="rule-row__text">Set deadlines. The task will never be finished without them.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="14" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">14</span>
+              <span class="rule-row__text">Stop focusing on things that don’t help you achieve your goals.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="15" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">15</span>
+              <span class="rule-row__text">Don’t become a perfectionist when it isn’t required.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="16" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">16</span>
+              <span class="rule-row__text">Schedule a time when you’re going to check your email.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="17" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">17</span>
+              <span class="rule-row__text">Avoid all unnecessary meetings.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="18" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">18</span>
+              <span class="rule-row__text">Avoid negative people at all costs — including the one in your head.</span>
+            </button>
+
+            <button class="rule-row" type="button" data-rule="19" aria-pressed="false">
+              <span class="rule-row__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg></span>
+              <span class="rule-row__num">19</span>
+              <span class="rule-row__text">Do what you love.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= concepts =========================== -->
+    <section class="section section--tight" id="concepts">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">02 — Borrowed words</span>
+            <h2>Six ideas I keep <em class="serif">in my pocket.</em></h2>
+            <p>Small words from elsewhere that made my own days easier to carry.</p>
+          </div>
+          <div class="section-head__aside">
+            <span class="index-tag"><b>06</b> concepts, no ownership</span>
+          </div>
+        </div>
+
+        <div class="concept-grid">
+          <article class="concept" data-reveal>
+            <span class="concept__num">01</span>
+            <span class="concept__kanji" aria-hidden="true">生き甲斐</span>
+            <h3>IKIGAI</h3>
+            <p>The reason you wake up each morning excited to do something. When you have a purpose, you won’t feel lazy or unmotivated.</p>
+          </article>
+
+          <article class="concept concept--pink" data-reveal style="--d: 70ms">
+            <span class="concept__num">02</span>
+            <span class="concept__kanji" aria-hidden="true">改善</span>
+            <h3>KAIZEN</h3>
+            <p>Focus on small improvements every day. Don’t wait for the big leap — try to be 1% better today than you were yesterday.</p>
+          </article>
+
+          <article class="concept concept--yellow" data-reveal style="--d: 140ms">
+            <span class="concept__num">03</span>
+            <span class="concept__kanji" aria-hidden="true">初心</span>
+            <h3>SHOSHIN</h3>
+            <p>In the beginner’s mind there are many possibilities; in the expert’s mind there are few. Stay willing to be bad at it.</p>
+          </article>
+
+          <article class="concept concept--green" data-reveal>
+            <span class="concept__num">04</span>
+            <span class="concept__kanji" aria-hidden="true">腹八分</span>
+            <h3>HARA HACHI BU</h3>
+            <p>Stop eating when you’re about 80% full. Leave a little room — for food, for rest, for the unexpected.</p>
+          </article>
+
+          <article class="concept concept--violet" data-reveal style="--d: 70ms">
+            <span class="concept__num">05</span>
+            <span class="concept__kanji" aria-hidden="true">森林浴</span>
+            <h3>SHINRIN-YOKU</h3>
+            <p>“Forest bathing.” Spend more time with nature. Walk without a destination and let your shoulders drop.</p>
+          </article>
+
+          <article class="concept" data-reveal style="--d: 140ms">
+            <span class="concept__num">06</span>
+            <span class="concept__kanji" aria-hidden="true">我慢</span>
+            <h3>GAMAN</h3>
+            <p>Patience and perseverance when things get hard. Not everything difficult is an emergency.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ quote wall ========================== -->
+    <section class="section" id="quotes">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">03 — The back of receipts</span>
+            <h2>Things worth <em class="serif">writing down.</em></h2>
+            <p>Some of these are mine. Some are borrowed. All of them have been tested by a bad week.</p>
+          </div>
+        </div>
+
+        <div class="quote-wall">
+          <article class="quote-card quote-card--wide" data-reveal>
+            <span class="tape" aria-hidden="true"></span>
+            <span class="quote-card__label">The two-day rule</span>
+            <h3>Miss once. <em>Never twice.</em></h3>
+            <p class="quote-card__quote">“You can miss one day if you must. But never two days in a row.”</p>
+            <p>
+              Say you’ve started exercising every day, then something happens and you
+              can’t train for a day. That’s fine. But if you miss two days in a row,
+              not exercising becomes the habit — and there’s a chance you won’t start
+              again for weeks.
+            </p>
+            <div class="quote-card__sig">The rule that saved more habits than motivation ever did</div>
+          </article>
+
+          <article class="quote-card quote-card--mid quote-card--ink" data-reveal style="--d: 80ms">
+            <span class="quote-card__label">On ownership</span>
+            <p class="quote-card__quote">“Take responsibility for your mistakes.”</p>
+            <p>
+              Not because it’s noble. Because blame is a room with no windows, and
+              responsibility is the door.
+            </p>
+            <div class="quote-card__sig">Javier</div>
+          </article>
+
+          <article class="quote-card quote-card--third quote-card--yellow" data-reveal>
+            <span class="quote-card__label">On perspective</span>
+            <p class="quote-card__quote">“A lot of bad things happened to me, and I’m happy now that they happened.”</p>
+            <p>They changed the trajectory of my life. I couldn’t see it at the time. I can see it now.</p>
+            <div class="quote-card__sig">Hindsight, doing its thing</div>
+          </article>
+
+          <article class="quote-card quote-card--third quote-card--cobalt" data-reveal style="--d: 80ms">
+            <span class="quote-card__label">The present</span>
+            <div class="present-lines">
+              Quit. Don’t quit. Noodles. Don’t noodles. You are too concerned with what was and what will be.
+              <em>Yesterday is history · tomorrow is a mystery · today is a gift</em>
+            </div>
+            <p>That is why it is called the present.</p>
+            <div class="quote-card__sig">Borrowed from a cartoon panda</div>
+          </article>
+
+          <article class="quote-card quote-card--third quote-card--pink" data-reveal style="--d: 160ms">
+            <span class="quote-card__label">On seeing</span>
+            <p class="quote-card__quote">“People’s minds are changed through observation.”</p>
+            <p>Not arguments. Not captions. Watch something long enough and it will teach you how to see it.</p>
+            <div class="quote-card__sig">A note to self, aged 19</div>
+          </article>
+
+          <article class="quote-card quote-card--wide" data-reveal>
+            <span class="quote-card__label">The five-minute rule</span>
+            <h3>If it takes less than five minutes, <em>it takes less than five minutes.</em></h3>
+            <p>
+              This is the rule I break most and the one I return to fastest. The email,
+              the dish, the message you’ve been avoiding — it is almost never the task
+              that is heavy. It is the carrying of it.
+            </p>
+            <div class="quote-card__sig">Do it now, then forget it</div>
+          </article>
+
+          <article class="quote-card quote-card--mid" data-reveal style="--d: 80ms">
+            <span class="quote-card__label">On finishing</span>
+            <h3>Done is a place. <em>Perfect is a direction.</em></h3>
+            <p>
+              Don’t be a perfectionist when perfection isn’t required. Most things need
+              to exist before they need to be beautiful.
+            </p>
+            <div class="quote-card__sig">Written above my desk</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== video ============================= -->
+    <section class="section section--tight" id="video">
+      <div class="wrap">
+        <div class="film">
+          <div class="yt" data-yt="QVn5T4myAxE" data-yt-title="The lesson that went over my head" data-reveal="left">
+            <button class="yt__cover" type="button" data-yt-start aria-label="Load and play the YouTube video">
+              <img src="https://i.ytimg.com/vi/QVn5T4myAxE/maxresdefault.jpg" alt="" loading="lazy">
+              <span class="yt__inner">
+                <span class="yt__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                <b>This lesson is going over my head</b>
+                <span>YouTube · press to load</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="film__meta" data-reveal="right">
+            <span class="kicker">04 — The lesson</span>
+            <h2>Sometimes the lesson arrives before you’re ready for it.</h2>
+            <p>
+              I keep this one here because I still don’t fully understand it. That seems
+              like a good reason to leave it on the page.
+            </p>
+            <div class="film__facts">
+              <div><span>Source</span><span>YouTube</span></div>
+              <div><span>Notes taken</span><span>None</span></div>
+              <div><span>Understood</span><span>Still pending</span></div>
+              <div><span>Watched again</span><span>Yes</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== footer =============================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="kicker kicker--light">The end, for now</span>
+          <h2>Stay a little <em>longer.</em></h2>
+          <p>
+            This place is a folder, a pair of headphones, and a pile of paper.
+            It gets updated when something is worth keeping.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MUSICS.html">Music</a></li>
+            <li><a href="DAILY-TRUTH.html">Daily truth</a></li>
+            <li><a href="GALLERY.html">Sketchbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Elsewhere</h3>
+          <ul>
+            <li><a href="DAILY-TRUTH.html#rules">The nineteen rules</a></li>
+            <li><a href="DAILY-TRUTH.html#concepts">The six concepts</a></li>
+            <li><a href="DAILY-TRUTH.html#quotes">The quote wall</a></li>
+            <li><a href="#main">Back to top</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__stamp">
+          <div class="footer__stamp-card" data-view-card>
+            <span>uSEEme</span>
+            <b><span data-view-count>—</span> <small>times</small></b>
+            <small>since 2022, one visit at a time</small>
+          </div>
+          <div class="footer__badges" aria-label="Old home badges">
+            <a href="index.html" aria-label="Old home badge"><img src="Images/home.png" alt=""></a>
+            <a href="MUSICS.html" aria-label="Old music badge"><img src="Images/music.png" alt=""></a>
+            <a href="DAILY-TRUTH.html" aria-label="Old daily truth badge"><img src="Images/daily truth.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__mega" aria-hidden="true">Javier’s New Home</div>
+
+      <div class="footer__bottom">
+        <span>© 2022–<span data-year>2026</span> Javier’s New Home. All rights reserved.</span>
+        <span>Made by hand. Kept in a folder.</span>
+        <a class="to-top" href="#main">
+          Top
+          <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14V2M3.5 6.5L8 2l4.5 4.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/player.js" defer></script>
+</body>
+</html>

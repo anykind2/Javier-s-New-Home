@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sketchbook — Javier’s New Home</title>
+  <meta name="description" content="Pencil, charcoal, paper birds, stickers, and one very short film. The sketchbook Javier never really closes.">
+  <meta name="theme-color" content="#f2ecdf">
+  <meta property="og:title" content="Sketchbook — Javier’s New Home">
+  <meta property="og:description" content="Things made by hand when nobody was watching. Open the pinboard.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var theme = localStorage.getItem('javier.theme');
+        if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+      } catch (err) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the good stuff</a>
+
+  <header class="site-nav" data-nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">J</span>
+        <span class="brand__text">
+          <b>Javier’s New Home</b>
+          <span>Est. 2022 · kept by hand</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="MUSICS.html">Music</a>
+        <a class="nav-link" href="DAILY-TRUTH.html">Daily truth</a>
+        <a class="nav-link is-active" href="GALLERY.html" aria-current="page">Sketchbook</a>
+      </nav>
+
+      <div class="nav-tools">
+        <button class="nav-now" type="button" data-open-player aria-label="Open the now playing panel">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span data-nav-track>Past Lives</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Lights off">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.1"/><path d="M12 2v2.3M12 19.7V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.3M19.7 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/>
+          </svg>
+        </button>
+        <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <div class="mobile-menu__inner">
+      <span class="kicker">The whole house</span>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="index.html">Home <span>01</span></a>
+        <a href="MUSICS.html">Music <span>02</span></a>
+        <a href="DAILY-TRUTH.html">Daily truth <span>03</span></a>
+        <a href="GALLERY.html" aria-current="page">Sketchbook <span>04</span></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <span>64 songs · 19 rules · one sketchbook</span>
+        <a href="MUSICS.html">start listening →</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================ page hero =========================== -->
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="page-hero__grid-bg" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <div class="page-hero__grid">
+          <div>
+            <span class="kicker" data-reveal>The sketchbook · pinned open</span>
+            <h1 data-reveal>Things I made<br><em>by hand.</em></h1>
+            <p class="page-hero__lede" data-reveal>
+              Pencil, charcoal, paper birds, a couple of stickers, and one very short
+              film. None of it is finished. All of it is here. Click anything to look
+              closer — the pinboard opens like a little drawer.
+            </p>
+
+            <div class="page-hero__actions" data-reveal>
+              <a class="btn btn--primary" href="#pinboard">
+                Open the pinboard
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v11M4 9.5l4 4 4-4"/></svg>
+              </a>
+              <a class="btn" href="MUSICS.html">
+                Put something on
+                <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+              </a>
+            </div>
+
+            <div class="page-hero__stats" data-reveal>
+              <span class="stat"><b>06</b><span>pieces</span></span>
+              <span class="stat"><b>04</b><span>mediums</span></span>
+              <span class="stat"><b>00</b><span>finished works</span></span>
+              <span class="stat"><b>01</b><span>afternoon film</span></span>
+            </div>
+          </div>
+
+          <aside class="staff-card" data-reveal="scale">
+            <span class="tape" aria-hidden="true"></span>
+            <div class="staff-card__head">
+              <div>
+                <span class="kicker kicker--plain">Pinboard index</span>
+                <h2>What’s in the drawer</h2>
+              </div>
+              <span>2022 — now<br>Kept in a folder</span>
+            </div>
+
+            <ul class="quote-card__list">
+              <li><span>02</span>Pencil and charcoal studies</li>
+              <li><span>02</span>Photographs of small things</li>
+              <li><span>01</span>A 21-second film</li>
+              <li><span>01</span>A pair of hand-made stickers</li>
+            </ul>
+
+            <div class="staff-card__foot">
+              <span class="kicker kicker--plain"><b data-gallery-count>6 pieces</b> · no resolutions</span>
+              <a class="btn btn--sm" href="#pinboard">Browse</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ pinboard =========================== -->
+    <section class="section section--tight" id="pinboard">
+      <div class="wrap">
+        <div class="library-bar" data-library-bar>
+          <div class="library-bar__inner">
+            <div class="chips" role="group" aria-label="Filter the sketchbook">
+              <button class="chip is-active" type="button" data-gallery-filter="all" aria-pressed="true">Everything <b>6</b></button>
+              <button class="chip" type="button" data-gallery-filter="sketch" aria-pressed="false">Sketches <b>2</b></button>
+              <button class="chip" type="button" data-gallery-filter="photo" aria-pressed="false">Photographs <b>2</b></button>
+              <button class="chip" type="button" data-gallery-filter="film" aria-pressed="false">Film <b>1</b></button>
+              <button class="chip" type="button" data-gallery-filter="sticker" aria-pressed="false">Stickers <b>2</b></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-line">
+          <span>Pinned by hand · click a piece to enlarge</span>
+          <span data-gallery-count>6 pieces</span>
+        </div>
+
+        <div class="pin-grid">
+          <article class="pin" data-cat="sketch" data-reveal>
+            <button class="pin__btn" type="button"
+              data-src="Images/tree moon.jpg"
+              data-title="The road home"
+              data-caption="Pencil on paper, 2022. A road, a tree, and a moon that refuses to sit still."
+              data-kind="image"
+              data-alt="Pencil drawing of a road running under a tree and a moon">
+              <span class="pin__tape tape" aria-hidden="true"></span>
+              <span class="pin__tag">Sketch</span>
+              <img src="Images/tree moon.jpg" alt="Pencil drawing of a road running under a tree and a moon" loading="lazy">
+              <span class="pin__meta"><span><b>The road home</b>Pencil · 2022</span><span>01</span></span>
+            </button>
+          </article>
+
+          <article class="pin" data-cat="sketch" data-reveal style="--d: 70ms">
+            <button class="pin__btn" type="button"
+              data-src="Images/moon cycle.jpg"
+              data-title="Moon cycle"
+              data-caption="Charcoal on paper, 2022. A figure, some birds, a bicycle, and the moon doing all the work."
+              data-kind="image"
+              data-alt="Charcoal drawing of a figure with birds and a bicycle under the moon">
+              <span class="pin__tape tape" aria-hidden="true"></span>
+              <span class="pin__tag">Sketch</span>
+              <img src="Images/moon cycle.jpg" alt="Charcoal drawing of a figure with birds and a bicycle under the moon" loading="lazy">
+              <span class="pin__meta"><span><b>Moon cycle</b>Charcoal · 2022</span><span>02</span></span>
+            </button>
+          </article>
+
+          <article class="pin" data-cat="photo" data-reveal style="--d: 140ms">
+            <button class="pin__btn" type="button"
+              data-src="Images/parots.jpg"
+              data-title="Paper birds"
+              data-caption="Photograph, 2023. Origami birds hanging in a window, waiting for a breeze that never came."
+              data-kind="image"
+              data-alt="Origami paper birds hanging in a bright window">
+              <span class="pin__tape tape" aria-hidden="true"></span>
+              <span class="pin__tag">Photo</span>
+              <img src="Images/parots.jpg" alt="Origami paper birds hanging in a bright window" loading="lazy">
+              <span class="pin__meta"><span><b>Paper birds</b>Photograph · 2023</span><span>03</span></span>
+            </button>
+          </article>
+
+          <article class="pin" data-cat="sticker" data-reveal>
+            <button class="pin__btn" type="button"
+              data-src="Images/Javier.jpg"
+              data-title="The J sticker"
+              data-caption="Hand-drawn sticker, 2022. The little face that started the whole site."
+              data-kind="image"
+              data-alt="Hand-drawn blue and pink J sticker with a face">
+              <span class="pin__tape tape" aria-hidden="true"></span>
+              <span class="pin__tag">Sticker</span>
+              <img src="Images/Javier.jpg" alt="Hand-drawn blue and pink J sticker with a face" loading="lazy">
+              <span class="pin__meta"><span><b>The J sticker</b>Ink &amp; tape · 2022</span><span>04</span></span>
+            </button>
+          </article>
+
+          <article class="pin" data-cat="sticker" data-reveal style="--d: 70ms">
+            <button class="pin__btn" type="button"
+              data-src="Images/Arup.png"
+              data-title="The A sticker"
+              data-caption="Hand-drawn sticker, 2022. Made for a friend who kept borrowing my pens."
+              data-kind="image"
+              data-alt="Hand-drawn A sticker in blue and pink">
+              <span class="pin__tape tape" aria-hidden="true"></span>
+              <span class="pin__tag">Sticker</span>
+              <img src="Images/Arup.png" alt="Hand-drawn A sticker in blue and pink" loading="lazy">
+              <span class="pin__meta"><span><b>The A sticker</b>Ink &amp; tape · 2022</span><span>05</span></span>
+            </button>
+          </article>
+
+          <article class="pin" data-cat="film" data-reveal style="--d: 140ms">
+            <button class="pin__btn" type="button"
+              data-src="Videoes/dragonVSparoit.mp4"
+              data-title="Dragon vs. Parrot"
+              data-caption="A 21-second short, 2022. One dragon, one parrot, and a desk lamp doing its best."
+              data-kind="video"
+              data-alt="A dragon and a parrot facing off in a short film">
+              <span class="pin__tape tape" aria-hidden="true"></span>
+              <span class="pin__tag">Film</span>
+              <img src="Images/parots.jpg" alt="A dragon and a parrot facing off in a short film" loading="lazy">
+              <span class="pin__playbadge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <span class="pin__meta"><span><b>Dragon vs. Parrot</b>Film · 0:21</span><span>06</span></span>
+            </button>
+          </article>
+        </div>
+
+        <div class="sketch__note" data-reveal>
+          <p>“I’ll finish it later” — still true, probably.</p>
+          <button class="btn btn--sm" type="button" data-gallery-filter="all">Show everything again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== notes ============================= -->
+    <section class="section section--tight" id="notes">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">A note on the work</span>
+            <h2>Made badly, <em class="serif">kept anyway.</em></h2>
+            <p>Two things I tell myself whenever the sketchbook feels too unfinished to show anyone.</p>
+          </div>
+        </div>
+
+        <div class="quote-wall">
+          <article class="quote-card quote-card--wide" data-reveal>
+            <span class="tape" aria-hidden="true"></span>
+            <span class="quote-card__label">Why paper?</span>
+            <h3>Paper doesn’t ask you to <em>publish it.</em></h3>
+            <p>
+              A sketch can be bad in private. That is the whole point. Some of these
+              drawings exist only because nobody was going to see them, and then the
+              site happened. I’m still deciding whether that was a good idea.
+            </p>
+            <div class="quote-card__sig">Javier · pencil first, always</div>
+          </article>
+
+          <article class="quote-card quote-card--mid quote-card--cobalt" data-reveal style="--d: 80ms">
+            <span class="quote-card__label">Why keep the film?</span>
+            <p class="quote-card__quote">“It took one afternoon. It has outlived most of my serious plans.”</p>
+            <p>Dragon vs. Parrot is 21 seconds long and still makes me laugh. That is more than most things I’ve made on purpose.</p>
+            <div class="quote-card__sig">A short film, a long memory</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== footer =============================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="kicker kicker--light">The end, for now</span>
+          <h2>Stay a little <em>longer.</em></h2>
+          <p>
+            This place is a folder, a pair of headphones, and a pile of paper.
+            It gets updated when something is worth keeping.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MUSICS.html">Music</a></li>
+            <li><a href="DAILY-TRUTH.html">Daily truth</a></li>
+            <li><a href="GALLERY.html">Sketchbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Elsewhere</h3>
+          <ul>
+            <li><a href="GALLERY.html">The pinboard</a></li>
+            <li><a href="DAILY-TRUTH.html#quotes">The quote wall</a></li>
+            <li><a href="index.html#film">Dragon vs. Parrot</a></li>
+            <li><a href="#main">Back to top</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__stamp">
+          <div class="footer__stamp-card" data-view-card>
+            <span>uSEEme</span>
+            <b><span data-view-count>—</span> <small>times</small></b>
+            <small>since 2022, one visit at a time</small>
+          </div>
+          <div class="footer__badges" aria-label="Old home badges">
+            <a href="index.html" aria-label="Old home badge"><img src="Images/home.png" alt=""></a>
+            <a href="MUSICS.html" aria-label="Old music badge"><img src="Images/music.png" alt=""></a>
+            <a href="DAILY-TRUTH.html" aria-label="Old daily truth badge"><img src="Images/daily truth.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__mega" aria-hidden="true">Javier’s New Home</div>
+
+      <div class="footer__bottom">
+        <span>© 2022–<span data-year>2026</span> Javier’s New Home. All rights reserved.</span>
+        <span>Made by hand. Kept in a folder.</span>
+        <a class="to-top" href="#main">
+          Top
+          <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14V2M3.5 6.5L8 2l4.5 4.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= lightbox ============================= -->
+  <dialog class="lightbox" id="lightbox" aria-label="Gallery lightbox">
+    <div class="lightbox__bar">
+      <span>Lightbox · <span data-lb-count>01 / 06</span></span>
+      <button class="lightbox__close" type="button" data-lb-close aria-label="Close the lightbox">Close ✕</button>
+    </div>
+    <div class="lightbox__media" data-lb-media></div>
+    <div class="lightbox__foot">
+      <div class="lightbox__caption">
+        <h3 data-lb-title>The road home</h3>
+        <p data-lb-caption>Pencil on paper, 2022.</p>
+      </div>
+      <div class="lightbox__nav">
+        <button class="icon-btn" type="button" data-lb-prev aria-label="Previous piece">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5L4.5 8l5.5 5.5"/></svg>
+        </button>
+        <button class="icon-btn" type="button" data-lb-next aria-label="Next piece">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5L11.5 8 6 13.5"/></svg>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/player.js" defer></script>
+</body>
+</html>

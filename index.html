@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javier’s New Home — songs, truths &amp; things made by hand</title>
+  <meta name="description" content="A hand-built home for 64 songs, 19 rules, a sketchbook, and the things Javier keeps coming back to. No algorithm.">
+  <meta name="theme-color" content="#f2ecdf">
+  <meta property="og:title" content="Javier’s New Home">
+  <meta property="og:description" content="Songs, truths &amp; things made by hand. Sixty-four tracks, nineteen rules, and a sketchbook I never really close.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var theme = localStorage.getItem('javier.theme');
+        if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+      } catch (err) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the good stuff</a>
+
+  <header class="site-nav" data-nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">J</span>
+        <span class="brand__text">
+          <b>Javier’s New Home</b>
+          <span>Est. 2022 · kept by hand</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link is-active" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="MUSICS.html">Music</a>
+        <a class="nav-link" href="DAILY-TRUTH.html">Daily truth</a>
+        <a class="nav-link" href="GALLERY.html">Sketchbook</a>
+      </nav>
+
+      <div class="nav-tools">
+        <button class="nav-now" type="button" data-open-player aria-label="Open the now playing panel">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span data-nav-track>Past Lives</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Lights off">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.1"/><path d="M12 2v2.3M12 19.7V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.3M19.7 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/>
+          </svg>
+        </button>
+        <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <div class="mobile-menu__inner">
+      <span class="kicker">The whole house</span>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="index.html" aria-current="page">Home <span>01</span></a>
+        <a href="MUSICS.html">Music <span>02</span></a>
+        <a href="DAILY-TRUTH.html">Daily truth <span>03</span></a>
+        <a href="GALLERY.html">Sketchbook <span>04</span></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <span>64 songs · 19 rules · one sketchbook</span>
+        <a href="MUSICS.html">start listening →</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================== hero ============================== -->
+    <section class="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__sun" aria-hidden="true"></div>
+      <div class="hero__ring" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <div class="hero__stamp">
+              <span class="stamp"><i></i>Issue No. 01 · A home made by hand</span>
+            </div>
+
+            <h1>
+              <span class="line">Songs,</span>
+              <span class="line">truths &amp;</span>
+              <span class="line"><em>things<svg class="scribble" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8c28-6 55-6 82-2s55 5 114-3" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></em></span>
+              <span class="line">made by hand.</span>
+            </h1>
+
+            <span class="hero__note" aria-hidden="true">
+              pick a song, any song
+              <svg viewBox="0 0 46 34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6c11 12 24 18 38 19"/><path d="M33 17l9 8-11 4"/></svg>
+            </span>
+
+            <p class="hero__lede">
+              Welcome to my new home. Sixty-four songs I keep coming back to, nineteen rules
+              that keep me honest, and a sketchbook I never really close. No algorithm —
+              just the good stuff.
+            </p>
+
+            <div class="hero__actions">
+              <button class="btn btn--primary" type="button" data-play="Past Lives.mp3">
+                <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+                Play the mixtape
+              </button>
+              <a class="btn" href="MUSICS.html">
+                Browse all 64 songs
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5l9-9M6 3.5h6.5V10"/></svg>
+              </a>
+            </div>
+
+            <div class="hero__meta">
+              <span>64 songs</span>
+              <span>3h 41m of noise</span>
+              <span>19 rules</span>
+              <span>zero algorithms</span>
+            </div>
+          </div>
+
+          <div class="collage" data-reveal="scale">
+            <div class="collage__disc" aria-hidden="true"></div>
+
+            <figure class="collage__poster">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="Images/tree moon.jpg" alt="Pencil drawing of a tree, a moon and a long road" width="900" height="675">
+              <figcaption>
+                <span><b>The road home</b>Pencil on paper</span>
+                <span>No. 014</span>
+              </figcaption>
+            </figure>
+
+            <div class="collage__sticker" aria-hidden="true">
+              <img src="Images/Javier.jpg" alt="">
+              <span>that’s me</span>
+            </div>
+
+            <div class="collage__cassette">
+              <div class="cassette__top">
+                <span>Javier’s archive · <b>Side A</b></span>
+                <span data-cassette-number>No. 40 / 64</span>
+              </div>
+              <div class="cassette__window">
+                <span class="cassette__reel" aria-hidden="true"><i></i></span>
+                <span class="cassette__meta">
+                  <b data-player-title>Past Lives</b>
+                  <span data-player-artist>sapientdream</span>
+                </span>
+                <span class="cassette__reel" aria-hidden="true"><i></i></span>
+              </div>
+              <div class="cassette__bottom">
+                <span>Javier’s tape</span>
+                <button class="cassette__play" type="button" data-toggle-play aria-label="Play the current track">
+                  <span data-cassette-icon aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg></span>
+                  <span data-cassette-label>Play</span>
+                </button>
+                <span>33⅓ rpm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="hero__scroll" aria-hidden="true">Scroll slowly</span>
+    </section>
+
+    <!-- ============================= marquee ============================ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">64 songs <span class="marquee__star">✦</span></span>
+          <span class="marquee__item"><em>19 rules</em> <span class="marquee__star">✦</span></span>
+          <span class="marquee__item">A sketchbook left open <span class="marquee__star">✦</span></span>
+          <span class="marquee__item">No algorithm <span class="marquee__star">✦</span></span>
+          <span class="marquee__item"><em>Dragon vs. parrot</em> <span class="marquee__star">✦</span></span>
+          <span class="marquee__item">Made by hand since 2022 <span class="marquee__star">✦</span></span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">64 songs <span class="marquee__star">✦</span></span>
+          <span class="marquee__item"><em>19 rules</em> <span class="marquee__star">✦</span></span>
+          <span class="marquee__item">A sketchbook left open <span class="marquee__star">✦</span></span>
+          <span class="marquee__item">No algorithm <span class="marquee__star">✦</span></span>
+          <span class="marquee__item"><em>Dragon vs. parrot</em> <span class="marquee__star">✦</span></span>
+          <span class="marquee__item">Made by hand since 2022 <span class="marquee__star">✦</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ staff picks ========================= -->
+    <section class="section" id="picks">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">01 — On rotation</span>
+            <h2>Five songs I keep <em class="serif">coming back to.</em></h2>
+            <p>
+              Not the “best” songs. The ones that survive the shuffle. Press one and the
+              little cassette in the corner will follow you around the site.
+            </p>
+          </div>
+          <div class="section-head__aside">
+            <a class="arrow-link" href="MUSICS.html">
+              The full archive
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5l9-9M6 3.5h6.5V10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <div class="staff-card" data-reveal="left">
+            <span class="tape" aria-hidden="true"></span>
+            <div class="staff-card__head">
+              <div>
+                <span class="kicker kicker--plain">Staff picks</span>
+                <h3>This week’s rotation</h3>
+              </div>
+              <span>Side A<br>Updated whenever</span>
+            </div>
+
+            <div class="staff-list" data-staff-picks></div>
+            <noscript><p class="library-note">Turn on JavaScript to load the staff picks and the player.</p></noscript>
+
+            <div class="staff-card__foot">
+              <span class="kicker kicker--plain"><b data-total-count>64 tracks</b> · <span data-library-time>3h 41m</span></span>
+              <button class="btn btn--sm" type="button" data-shuffle>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h3.5c1.5 0 2.8.8 3.7 2.1l3.6 5.8c.9 1.3 2.2 2.1 3.7 2.1H21"/><path d="M3 17h3.5c1.5 0 2.8-.8 3.7-2.1l.6-1"/><path d="M13.2 9.1l.6-1C14.7 6.8 16 6 17.5 6H21"/><path d="M18 3l3 3-3 3M18 14l3 3-3 3"/></svg>
+                Surprise me
+              </button>
+            </div>
+          </div>
+
+          <div class="shelf-art" data-reveal="right">
+            <span class="shelf-art__note" aria-hidden="true">
+              the moon, again
+              <svg viewBox="0 0 40 30" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5c9 10 20 15 32 16"/><path d="M28 14l7 7-9 3"/></svg>
+            </span>
+            <div class="shelf-art__vinyl" aria-hidden="true"></div>
+            <figure class="shelf-art__sleeve">
+              <img src="Images/moon cycle.jpg" alt="Charcoal drawing of a figure under a moon with birds and a bicycle" width="900" height="900">
+              <div class="shelf-art__label">
+                <span>Charcoal on paper</span>
+                <b>Moon Cycle</b>
+              </div>
+            </figure>
+            <div class="shelf-art__sticker" aria-hidden="true">64<small>tracks<br>on repeat</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= truth ============================== -->
+    <section class="section panel-ink truth" id="truth">
+      <div class="wrap truth__grid">
+        <div data-reveal="left">
+          <span class="kicker kicker--light">02 — Daily truth</span>
+          <span class="truth__quote-mark" aria-hidden="true">“</span>
+          <blockquote class="truth__quote" data-home-quote>Whatever can be done in under five minutes should be done now.</blockquote>
+          <p class="truth__author"><span data-home-truth-key>THE FIVE-MINUTE RULE</span> — Javier, still learning</p>
+          <div class="truth__actions">
+            <button class="btn btn--light" type="button" data-next-truth>
+              Another one
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></svg>
+            </button>
+            <a class="btn btn--light" href="DAILY-TRUTH.html">The whole notebook</a>
+          </div>
+        </div>
+
+        <aside class="truth__aside" data-reveal="right">
+          <div class="rules-card">
+            <span class="tape" aria-hidden="true"></span>
+            <div class="rules-card__num">19</div>
+            <h3>rules I try to live by</h3>
+            <p>Not a system. A working list, rewritten whenever life proves it wrong.</p>
+            <ol>
+              <li><span>01</span>Plan the day on paper.</li>
+              <li><span>02</span>Do the task you hate first.</li>
+              <li><span>03</span>Anything under five minutes gets done now.</li>
+              <li><span>04</span>Do what you love.</li>
+            </ol>
+            <a class="btn" href="DAILY-TRUTH.html#rules">Read all nineteen</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================ sketchbook ========================== -->
+    <section class="section" id="sketchbook">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">03 — The sketchbook</span>
+            <h2>Things I made when nobody was <em class="serif">watching.</em></h2>
+            <p>
+              Pencil, charcoal, paper birds, and one very short film. Nothing here is
+              finished, which is sort of the point.
+            </p>
+          </div>
+          <div class="section-head__aside">
+            <a class="arrow-link" href="GALLERY.html">
+              Open the pinboard
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5l9-9M6 3.5h6.5V10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="sketch-grid">
+          <a class="sketch-item sketch-item--a" href="GALLERY.html" data-reveal>
+            <span class="tape" aria-hidden="true"></span>
+            <img src="Images/tree moon.jpg" alt="Pencil drawing of a road running under a tree and a moon" width="900" height="675">
+            <figcaption><span><b>The road home</b>Pencil, 2022</span><span>01</span></figcaption>
+          </a>
+          <a class="sketch-item sketch-item--b" href="GALLERY.html" data-reveal style="--d: 90ms">
+            <span class="tape" aria-hidden="true"></span>
+            <img src="Images/moon cycle.jpg" alt="Charcoal drawing of a figure, birds and a bicycle under the moon" width="600" height="800">
+            <figcaption><span><b>Moon cycle</b>Charcoal, 2022</span><span>02</span></figcaption>
+          </a>
+          <a class="sketch-item sketch-item--c" href="GALLERY.html" data-reveal style="--d: 180ms">
+            <span class="tape" aria-hidden="true"></span>
+            <img src="Images/parots.jpg" alt="Origami paper birds hanging in a window" width="600" height="690">
+            <figcaption><span><b>Paper birds</b>Photograph, 2023</span><span>03</span></figcaption>
+          </a>
+        </div>
+
+        <div class="sketch__note" data-reveal>
+          <p>“I’ll finish it later” — me, for three years running.</p>
+          <a class="btn btn--sm" href="GALLERY.html">See all six pieces</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== film ============================= -->
+    <section class="section section--tight" id="film">
+      <div class="wrap">
+        <div class="film">
+          <div class="video-shell" data-reveal="left">
+            <video controls preload="metadata" playsinline poster="Images/parots.jpg" aria-label="Dragon vs. Parrot, a short stop-motion film">
+              <source src="Videoes/dragonVSparoit.mp4" type="video/mp4">
+              Your browser does not support this video.
+            </video>
+            <button class="video-cover" type="button" data-video-start aria-label="Play Dragon vs. Parrot">
+              <span class="video-cover__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <b>Dragon<br>vs. Parrot</b>
+              <span>A 21-second short · sound on</span>
+            </button>
+          </div>
+
+          <div class="film__meta" data-reveal="right">
+            <span class="kicker">04 — Moving pictures</span>
+            <h2>A dragon, a parrot, and a very short duel.</h2>
+            <p>
+              Made in one afternoon with a camera, a desk lamp, and more patience than
+              either of us expected. Best watched with the volume up and your expectations low.
+            </p>
+            <div class="film__facts">
+              <div><span>Runtime</span><span>0:21</span></div>
+              <div><span>Format</span><span>1280 × 720</span></div>
+              <div><span>Starring</span><span>One dragon, one parrot</span></div>
+              <div><span>Budget</span><span>Lunch</span></div>
+            </div>
+            <a class="arrow-link" href="GALLERY.html">
+              More things made by hand
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5l9-9M6 3.5h6.5V10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== footer =============================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="kicker kicker--light">The end, for now</span>
+          <h2>Stay a little <em>longer.</em></h2>
+          <p>
+            This place is a folder, a pair of headphones, and a pile of paper.
+            It gets updated when something is worth keeping.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MUSICS.html">Music</a></li>
+            <li><a href="DAILY-TRUTH.html">Daily truth</a></li>
+            <li><a href="GALLERY.html">Sketchbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Elsewhere</h3>
+          <ul>
+            <li><a href="MUSICS.html">The archive</a></li>
+            <li><a href="DAILY-TRUTH.html#rules">The nineteen rules</a></li>
+            <li><a href="DAILY-TRUTH.html#video">The lesson</a></li>
+            <li><a href="#main">Back to top</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__stamp">
+          <div class="footer__stamp-card" data-view-card>
+            <span>uSEEme</span>
+            <b><span data-view-count>—</span> <small>times</small></b>
+            <small>since 2022, one visit at a time</small>
+          </div>
+          <div class="footer__badges" aria-label="Old home badges">
+            <a href="index.html" aria-label="Old home badge"><img src="Images/home.png" alt=""></a>
+            <a href="MUSICS.html" aria-label="Old music badge"><img src="Images/music.png" alt=""></a>
+            <a href="DAILY-TRUTH.html" aria-label="Old daily truth badge"><img src="Images/daily truth.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__mega" aria-hidden="true">Javier’s New Home</div>
+
+      <div class="footer__bottom">
+        <span>© 2022–<span data-year>2026</span> Javier’s New Home. All rights reserved.</span>
+        <span>Made by hand. Kept in a folder.</span>
+        <a class="to-top" href="#main">
+          Top
+          <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14V2M3.5 6.5L8 2l4.5 4.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/player.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Archive — Javier’s New Home</title>
+  <meta name="description" content="Sixty-four songs, three hours and forty-one minutes, zero algorithms. Search, shuffle, and save the ones you keep coming back to.">
+  <meta name="theme-color" content="#f2ecdf">
+  <meta property="og:title" content="The Archive — Javier’s New Home">
+  <meta property="og:description" content="Sixty-four songs, no algorithm. The full music library, kept by hand.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var theme = localStorage.getItem('javier.theme');
+        if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+      } catch (err) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the good stuff</a>
+
+  <header class="site-nav" data-nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">J</span>
+        <span class="brand__text">
+          <b>Javier’s New Home</b>
+          <span>Est. 2022 · kept by hand</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link is-active" href="MUSICS.html" aria-current="page">Music</a>
+        <a class="nav-link" href="DAILY-TRUTH.html">Daily truth</a>
+        <a class="nav-link" href="GALLERY.html">Sketchbook</a>
+      </nav>
+
+      <div class="nav-tools">
+        <button class="nav-now" type="button" data-open-player aria-label="Open the now playing panel">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span data-nav-track>Past Lives</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Lights off">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.1"/><path d="M12 2v2.3M12 19.7V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.3M19.7 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a7 7 0 0 0 10.7 10.7z"/>
+          </svg>
+        </button>
+        <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <div class="mobile-menu__inner">
+      <span class="kicker">The whole house</span>
+      <nav class="mobile-menu__links" aria-label="Mobile">
+        <a href="index.html">Home <span>01</span></a>
+        <a href="MUSICS.html" aria-current="page">Music <span>02</span></a>
+        <a href="DAILY-TRUTH.html">Daily truth <span>03</span></a>
+        <a href="GALLERY.html">Sketchbook <span>04</span></a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <span>64 songs · 19 rules · one sketchbook</span>
+        <a href="index.html">back home →</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============================ page hero =========================== -->
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="page-hero__grid-bg" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <div class="page-hero__grid">
+          <div>
+            <span class="kicker" data-reveal>The archive · Side A</span>
+            <h1 data-reveal>Sixty-four songs,<br><em>no algorithm.</em></h1>
+            <p class="page-hero__lede" data-reveal>
+              Everything I actually listen to, in one long, unranked list. Some of it is
+              embarrassing. Some of it is the reason I’m still here. Press play anywhere —
+              the music follows you across the site.
+            </p>
+
+            <div class="page-hero__actions" data-reveal>
+              <button class="btn btn--primary" type="button" data-shuffle>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h3.5c1.5 0 2.8.8 3.7 2.1l3.6 5.8c.9 1.3 2.2 2.1 3.7 2.1H21"/><path d="M3 17h3.5c1.5 0 2.8-.8 3.7-2.1l.6-1"/><path d="M13.2 9.1l.6-1C14.7 6.8 16 6 17.5 6H21"/><path d="M18 3l3 3-3 3M18 14l3 3-3 3"/></svg>
+                Shuffle everything
+              </button>
+              <button class="btn" type="button" data-play="Past Lives.mp3">
+                <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>
+                Start with Past Lives
+              </button>
+            </div>
+
+            <div class="page-hero__stats" data-reveal>
+              <span class="stat"><b data-library-count>64</b><span>tracks</span></span>
+              <span class="stat"><b data-library-time>3h 41m</b><span>of music</span></span>
+              <span class="stat"><b>0</b><span>ads, ever</span></span>
+              <span class="stat"><b>∞</b><span>repeats allowed</span></span>
+            </div>
+          </div>
+
+          <div class="record-art" data-reveal="scale">
+            <div class="record-art__disc" aria-hidden="true"></div>
+            <div class="record-art__label" aria-hidden="true">
+              <b>J</b>
+              <span>Archive · Vol. 1</span>
+            </div>
+            <figure class="record-art__sleeve">
+              <img src="Images/tree moon.jpg" alt="Pencil drawing used as the sleeve art for the archive" width="800" height="600">
+              <span>Pencil on paper · sleeve no. 014</span>
+            </figure>
+            <div class="record-art__badge" aria-hidden="true">33⅓<small>rpm · handmade</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ library ============================= -->
+    <section class="section section--tight" id="library">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">The full list</span>
+            <h2>One list. <em class="serif">No skips hidden.</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <span class="stamp"><i></i>All killer, some filler</span>
+          </div>
+        </div>
+
+        <div class="library-bar" data-library-bar>
+          <div class="library-bar__inner">
+            <label class="searchbox" for="track-search">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+              <input id="track-search" type="search" data-search placeholder="Search a song or an artist…" autocomplete="off" spellcheck="false">
+              <kbd>/</kbd>
+            </label>
+
+            <div class="chips" role="group" aria-label="Filter the library">
+              <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All <b>64</b></button>
+              <button class="chip" type="button" data-filter="favs" aria-pressed="false">Favorites <b>0</b></button>
+              <button class="chip" type="button" data-filter="quick" aria-pressed="false">Under 3 min <b>0</b></button>
+            </div>
+
+            <label class="sort-wrap" for="track-sort">
+              Sort
+              <select class="select" id="track-sort" data-sort>
+                <option value="az">A – Z</option>
+                <option value="za">Z – A</option>
+                <option value="short">Shortest first</option>
+                <option value="long">Longest first</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="result-line">
+          <span data-result>Showing <b>64</b> of 64 tracks</span>
+          <span>Press / to search · click a heart to keep it</span>
+        </div>
+
+        <ol class="tracklist" data-tracklist></ol>
+
+        <div class="library-empty" data-empty>
+          <h3>Nothing here <em>yet.</em></h3>
+          <p>No track matches that search. Try a different word, or clear the filters.</p>
+          <button class="btn" type="button" data-reset-filters>Clear everything</button>
+        </div>
+
+        <div class="library-foot">
+          <p>All of it, in the order it landed in the folder.</p>
+          <button class="btn btn--sm" type="button" data-shuffle>
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h3.5c1.5 0 2.8.8 3.7 2.1l3.6 5.8c.9 1.3 2.2 2.1 3.7 2.1H21"/><path d="M3 17h3.5c1.5 0 2.8-.8 3.7-2.1l.6-1"/><path d="M13.2 9.1l.6-1C14.7 6.8 16 6 17.5 6H21"/><path d="M18 3l3 3-3 3M18 14l3 3-3 3"/></svg>
+            Surprise me
+          </button>
+        </div>
+
+        <div class="library-note">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <span>
+            The library is just a folder of MP3s — no streaming service, no account, no
+            recommendations. Favorites and the current track are saved in this browser only.
+          </span>
+        </div>
+
+        <noscript>
+          <p class="library-note">The tracklist and player need JavaScript. The songs are still in the <b>Musics</b> folder.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- =========================== liner notes ========================== -->
+    <section class="section section--tight" id="notes">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head__copy" data-reveal>
+            <span class="kicker">Liner notes</span>
+            <h2>How this archive <em class="serif">works.</em></h2>
+            <p>Three things worth knowing before you hit shuffle and disappear for an afternoon.</p>
+          </div>
+        </div>
+
+        <div class="quote-wall">
+          <article class="quote-card quote-card--wide" data-reveal>
+            <span class="tape" aria-hidden="true"></span>
+            <span class="quote-card__label">01 — The rules of the archive</span>
+            <h3>It is not ranked. <em>It is remembered.</em></h3>
+            <ul class="quote-card__list">
+              <li><span>01</span>Every song here was chosen by a person, not a playlist.</li>
+              <li><span>02</span>Some titles and artists were lost to bad ID3 tags. I kept what I knew.</li>
+              <li><span>03</span>Favorites live in your browser. The music lives in the folder.</li>
+              <li><span>04</span>If a song is missing, it probably hasn’t been ripped yet.</li>
+            </ul>
+            <div class="quote-card__sig">Javier · keeper of the folder</div>
+          </article>
+
+          <article class="quote-card quote-card--mid quote-card--ink" data-reveal style="--d: 90ms">
+            <span class="quote-card__label">02 — Why keep a local library?</span>
+            <p class="quote-card__quote">“The algorithm remembers what you like. A folder remembers who you were.”</p>
+            <p>The same 64 files have survived four laptops, two phones, and every attempt to start over. They are the closest thing to a diary I have.</p>
+            <div class="quote-card__sig">On keeping things</div>
+          </article>
+
+          <article class="quote-card quote-card--third quote-card--yellow" data-reveal>
+            <span class="quote-card__label">03 — A note on sound</span>
+            <h3>Headphones <em>recommended.</em></h3>
+            <p>These are old MP3s with old artwork and old volume levels. Some are loud. Some are quiet. All of them are meant to be played loud enough to annoy the neighbours.</p>
+            <div class="quote-card__sig">No remastering planned</div>
+          </article>
+
+          <article class="quote-card quote-card--third quote-card--cobalt" data-reveal style="--d: 90ms">
+            <span class="quote-card__label">04 — The player</span>
+            <h3>One tape, <em>every page.</em></h3>
+            <p>Start a song here and it will keep playing while you wander into the notebook or the sketchbook. The dock at the bottom is always there if you need to pause.</p>
+            <div class="quote-card__sig">Space to pause · N for next</div>
+          </article>
+
+          <article class="quote-card quote-card--third quote-card--pink" data-reveal style="--d: 180ms">
+            <span class="quote-card__label">05 — Credits</span>
+            <h3>These songs belong to <em>their makers.</em></h3>
+            <p>Nothing here is sold, streamed for profit, or claimed as mine. It’s a personal shelf. If you love something, go find the artist and pay them properly.</p>
+            <div class="quote-card__sig">Support the people who made it</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== footer =============================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="kicker kicker--light">The end, for now</span>
+          <h2>Stay a little <em>longer.</em></h2>
+          <p>
+            This place is a folder, a pair of headphones, and a pile of paper.
+            It gets updated when something is worth keeping.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="MUSICS.html">Music</a></li>
+            <li><a href="DAILY-TRUTH.html">Daily truth</a></li>
+            <li><a href="GALLERY.html">Sketchbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Elsewhere</h3>
+          <ul>
+            <li><a href="MUSICS.html">The archive</a></li>
+            <li><a href="DAILY-TRUTH.html#rules">The nineteen rules</a></li>
+            <li><a href="DAILY-TRUTH.html#video">The lesson</a></li>
+            <li><a href="#main">Back to top</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__stamp">
+          <div class="footer__stamp-card" data-view-card>
+            <span>uSEEme</span>
+            <b><span data-view-count>—</span> <small>times</small></b>
+            <small>since 2022, one visit at a time</small>
+          </div>
+          <div class="footer__badges" aria-label="Old home badges">
+            <a href="index.html" aria-label="Old home badge"><img src="Images/home.png" alt=""></a>
+            <a href="MUSICS.html" aria-label="Old music badge"><img src="Images/music.png" alt=""></a>
+            <a href="DAILY-TRUTH.html" aria-label="Old daily truth badge"><img src="Images/daily truth.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__mega" aria-hidden="true">Javier’s New Home</div>
+
+      <div class="footer__bottom">
+        <span>© 2022–<span data-year>2026</span> Javier’s New Home. All rights reserved.</span>
+        <span>Made by hand. Kept in a folder.</span>
+        <a class="to-top" href="#main">
+          Top
+          <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14V2M3.5 6.5L8 2l4.5 4.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/player.js" defer></script>
+</body>
+</html>
